@@ -1,2 +1,6 @@
-# vue-authority-route
-test-demo
+#### 前端控制路由权限 
+
+## 路由权限鉴权简单流程
+
+
+
