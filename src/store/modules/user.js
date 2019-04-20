@@ -63,6 +63,15 @@ export default {
           reject(err)
         })
       })
+    },
+    LoginOut({ commit }) {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          commit('SET_TOKEN', '')
+          commit('SET_GETINFO', false)
+          resolve()
+        }, 500)
+      })
     }
   }
 }

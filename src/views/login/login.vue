@@ -27,8 +27,10 @@ export default {
   },
   methods: {
     handleLogin() {
+      this.$Progress.start()
       this.$store.dispatch('Login', this.formItem).then(() => {
         this.$store.dispatch('getUserInfo').then(() => {
+          this.$Progress.finish()
           this.$router.push('/')
         })
       })
